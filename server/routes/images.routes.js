@@ -4,6 +4,7 @@ const router = Router()
 
 router.post('/api/images/upload', async (req, res) => {
 
+    const{ file } = req.files;
     console.log(req.files)
 
   return res.json('Received')
